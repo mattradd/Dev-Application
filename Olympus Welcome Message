@@ -1,0 +1,71 @@
+titleCut ["","White In",5];
+// Titlecut gives a white sceen which slowly fades away. This gives the perception of waking up!
+sleep 1;
+
+hint parseText
+"<t size='2.25'>
+<t color='#ff0000'>
+<t font='PuristaLight'>
+<t underline='1'>
+Welcome To Olympus
+  </t>
+  </t>
+  </t>
+  </t>
+<br/>
+<br/>
+<t size='1.25'>
+<t color='#DBDCDD'>
+We are the Mecca for Gamers!
+</t>
+</t>";
+/*display
+    Welcome
+  We are the Mecca for Gamers!
+*/
+sleep 5;
+
+hint parseText
+"<t size='2'>
+<t color='#ff0000'>
+<t font='PuristaLight'>
+Olympus Entertainment does not condone the following:
+  </t>
+  </t>
+  </t>
+<t align='left'>
+<br/>
+ - Buying or selling Olympus money
+ <br/>
+ - Exchanging Olympus currency/items for other forms of virtual currency (including, but not limited to, currency on other servers, other games, steam games, skins, etc)
+ <br/>
+ - Advertising or promoting the purchase/sale of any virtual items within Arma or any other game for real world currency/trade.  This applies to in game and on Olympus forums, Discord and Teamspeak.
+ <br/>
+ - The discussion of exchanging any virtual items for real world currency.
+ <br/>
+ - Player sanctioned giveaway prizes pools.  While Olympus has been granted Bohemia's approval for monetization this does not appear to extend to regular players.
+
+</t>";
+/*displays
+Olympus Entertainment does not condone the following:
+
+- Buying or selling Olympus money
+- Exchanging Olympus currency/items for other forms of virtual currency (including, but not limited to, currency on other servers, other games, steam games, skins, etc)
+- Advertising or promoting the purchase/sale of any virtual items within Arma or any other game for real world currency/trade.  This applies to in game and on Olympus forums, Discord and Teamspeak.
+- The discussion of exchanging any virtual items for real world currency.
+- Player sanctioned giveaway prizes pools.  While Olympus has been granted Bohemia's approval for monetization this does not appear to extend to regular players.
+*/
+Sleep 5;
+
+hint parseText
+"<t size='3'>
+<t color='#2FD044'>
+<t font='PuristaBold'>
+Go Frag On Cartel!
+</t>
+</t>
+</t>
+";
+
+
+true;
