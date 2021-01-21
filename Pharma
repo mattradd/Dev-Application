@@ -1,0 +1,38 @@
+//Pharma Script which spawns the vehicle and once spawns gives the option of selling the vehicle. Titletext shows money being given! 
+
+
+ jeff addaction [ "Spawn Small Pharmaceutical Vehicle",
+  "veh.sqf"];
+
+//params ["_target", "_caller", "_actionId", "_arguments"];
+bob addaction ["Sell Vehicle",
+{
+  if (truck getVariable ['truck', false]) then
+  {
+    if (truck distance bob <= 10) then {
+         deleteVehicle truck;
+         titleCut ["Money","black in",0]
+         else
+         {hint parsetext
+           "<t size='2'>
+         <t color='#ff0000'>
+         <t font='PuristaLight'>
+         The Pharma truck has either blown up, been destroyed or disappeared!
+         </t>
+         </t>
+         </t>
+         "
+
+    }
+  }
+}
+
+}
+, nil,6,true,true,""];
+
+
+// On another file named veh.sqf =
+truck = "O_Truck_03_ammo_F" createVehicle getMarkerPos "jeffSpawn";
+
+truck setVariable ["truck", true, true];
+
