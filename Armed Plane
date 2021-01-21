@@ -1,0 +1,6 @@
+//Armed Plane
+
+this addWeaponTurret ["rockets_Skyfire",[-1]]; this addMagazineTurret ["38Rnd_80mm_rockets",[-1]];
+// Shoots 38 Rounds of rockets. - Can be changed to a 50 Cal or even a TANK SHELL!!!
+this addWeaponTurret ["CMFlareLauncher",[-1]]; this addMagazineTurret ["120Rnd_CMFlare_Chaff_Magazine",[-1]];
+// Adds a flarelauncher onto the plane.
