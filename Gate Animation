@@ -1,0 +1,5 @@
+
+// In this code, I made a simple gate opening script! Once you come within 20 meters of the gate and look at it, you have an addaction giving you the ability to open it!
+
+  gate1 addaction ["Open Gate",{gate1 animate ["Door_1_rot", 1]},nil,1.5,true,true,"","true",20,false,"","" ];
+  gate1 addaction ["Close Gate",{gate1 animate ["Door_1_rot", 0]},nil,1.5,true,true,"","true",20,false,"","" ];
