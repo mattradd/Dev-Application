@@ -1,0 +1,28 @@
+//Below is a suicide vest script! Each attempt at making the script is shown before I was able to figure it out using an easy condition!
+
+/*player if ( "V_HarnessOGL_brn" isEqualTo 1 ) then
+{
+addaction ["Set Off Vest", _bomb];
+};
+
+_bomb = {
+   createVehicle [ Bo_GBU12_LGB, getPos ];
+};
+*/
+
+/*
+player addAction ["Set Off Vest", call _bomb,nil,1.5,true,true,"","vest player isEqualTo 'V_HarnessOGL_brn'",50,false,"",""];
+
+_bomb = {
+    createVehicle [ Bo_GBU12_LGB, getPos ];
+};
+*/
+
+/*_bomb = {
+    createVehicle ["Bo_GBU12_LGB", getPos player];
+};
+
+player addAction ["Set Off Vest", call _bomb,nil,1.5,true,true,"","vest player isEqualTo 'V_HarnessOGL_brn'",50,false,"",""];
+*/
+
+player addAction ["Set Off Vest",{createVehicle["Bo_GBU12_LGB", getPos player]},nil,1.5,true,true,"","vest player isEqualTo 'V_HarnessOGL_brn'",50,false,"",""];
